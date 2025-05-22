@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .BIRTHDAY{
+        display: flex;
+        justify-content: center;
+         align-items: center; align-content: center;
+         background-color: aqua;
+    padding: 30px;
+    border-radius:20px; 
+   background-repeat: no-repeat;
+     justify-content: space-around;
+  align-items: center;
+
+    }
+</style>
+<body>
+    <div class="img">
+        <img class="pic" src="https://i.pinimg.com/474x/b5/59/a1/b559a18194f0233519493381c0fa29ee.jpg" width="2000" height="700">
+           <section class="BIRTHDAY">
+        <ul>
+        <li> DEAR FRIENDS IAM VIKRUTI HOW ARE YOU ALL IAM GOOD.
+             MY BIRTHDAY IS TOMMRROW MAY 2
+        IAM INVITING YOU FOR MY BIRTHDIN MY HOME
+        ADDRES:RAMNAGAR 4TH STREET CHENNAI VEALCHERY 242 AS5 
+        FLOOR:5TH FLOOR
+       </li>
+    </ul>
+    </section>
+
+    </div>
+</body>
+</html>
