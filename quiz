@@ -33,10 +33,6 @@
   section{
     display: none;
   }
-
-  section:first-of-type{
-    display: block;
-  }
   
   section:target {
     display: block;
