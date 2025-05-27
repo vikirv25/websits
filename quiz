@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+    
+  body {
+      font-family: Arial, sans-serif;
+    background: #eef2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }  
+
+  .quiz-contanier{
+      
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  section{
+    display: none;
+  }
+
+  section:first-of-type{
+    display: block;
+  }
+  
+  section:target {
+    display: block;
+    animation: fade 0.3s ease-in-out;
+  }
+
+    h3 {
+    margin-top: 0;
+  }
+
+  ul {
+    padding-left: 1rem;
+  }
+
+  li{
+    margin: 0,4rem 0;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+
+     .btn {
+    background: #007bff;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s;
+  }
+  
+  
+  .btn:hover {
+    background: #0056b3;
+  }
+
+    .progress {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    color: #555;
+  }
+</style>
+<body>
+
+<div class="quiz-container">
+  <!-- Question 1 -->
+  <section id="q1">
+    <div class="progress">Question 1 of 5</div>
+    <h3>What is the capital of France?</h3>
+    <ul>
+      <li>London</li>
+      <li><strong>Paris</strong></li>
+      <li>Rome</li>
+    </ul>
+    <div class="pagination">
+      <a href="#q2" class="btn">Next</a>
+    </div>
+  </section>
+
+  <!-- Question 2 -->
+  <section id="q2">
+    <div class="progress">Question 2 of 5</div>
+    <h3>Which planet is known as the Red Planet?</h3>
+    <ul>
+      <li>Earth</li>
+      <li><strong>Mars</strong></li>
+      <li>Jupiter</li>
+    </ul>
+    <div class="pagination">
+      <a href="#q1" class="btn">Prev</a>
+      <a href="#q3" class="btn">Next</a>
+    </div>
+  </section>
+
+  <!-- Question 3 -->
+  <section id="q3">
+    <div class="progress">Question 3 of 5</div>
+    <h3>Which language is used for styling web pages?</h3>
+    <ul>
+      <li>HTML</li>
+      <li><strong>CSS</strong></li>
+      <li>Python</li>
+    </ul>
+    <div class="pagination">
+      <a href="#q2" class="btn">Prev</a>
+      <a href="#q4" class="btn">Next</a>
+    </div>
+  </section>
+
+  <!-- Question 4 -->
+  <section id="q4">
+    <div class="progress">Question 4 of 5</div>
+    <h3>Which gas do plants absorb?</h3>
+    <ul>
+      <li>Oxygen</li>
+      <li><strong>Carbon Dioxide</strong></li>
+      <li>Hydrogen</li>
+    </ul>
+    <div class="pagination">
+      <a href="#q3" class="btn">Prev</a>
+      <a href="#q5" class="btn">Next</a>
+    </div>
+  </section>
+
+  <!-- Question 5 -->
+  <section id="q5">
+    <div class="progress">Question 5 of 5</div>
+    <h3>What is the boiling point of water?</h3>
+    <ul>
+      <li>90°C</li>
+      <li><strong>100°C</strong></li>
+      <li>110°C</li>
+    </ul>
+    <div class="pagination">
+      <a href="#q4" class="btn">Prev</a>
+      <span class="btn disabled">End</span>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>
