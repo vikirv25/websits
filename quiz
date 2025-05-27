@@ -4,10 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Quiz website</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<style>
-  * {
+<style>  
+   * {
     box-sizing: border-box;
   }
 
@@ -23,7 +21,7 @@
     min-height: 100vh;
   }  
 
-  .quiz-contanier{
+  .quiz-container{
       
     background: white;
     padding: 2rem;
@@ -54,7 +52,7 @@
   }
 
   li{
-    margin: 0,4rem 0;
+    margin: 0.4rem 0;
   }
 
   .pagination {
@@ -85,6 +83,8 @@
     color: #555;
   }
 </style>
+</head>
+ 
 <body>
 
 <div class="quiz-container">
