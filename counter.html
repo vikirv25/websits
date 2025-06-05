@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body{
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: fuchsia;
+        }
+
+        .countainer{
+            margin-top: 100px;
+        }
+
+        h1{
+            font-size: 36px;
+        }
+
+        h2{
+            font-size: 60px;
+            color: skyblue;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+     </style>
+
+</head>
+<body>
+    <div class="countatner">
+        <h1>counter</h1>
+        <h2 class="count">0</h2>
+        <div class="button">
+           <button id="buttons">
+            <button id="increase">increase</button>
+            <button id="decrease">decrease</button>
+            <button id="reset">reset</button>
+           </button>
+        </div>
+    </div>
+    <script>
+        const count=document.getElementById('count')
+        const increasebutton=document.getElementById('incresase')
+        const decreasebutton=document.getElementById('decresase')
+        const resetbutton=document.getElementById('reset')
+        let counter=0
+        increasebutton.addEventListener('click',()=>{
+            counter++
+            count.textContent=counter
+        })
+
+           decreasebutton.addEventListener('click',()=>{
+            counter--
+            count.textContent=counter
+        })
+
+        
+           resetbutton.addEventListener('click',()=>{
+            counter=0
+            count.textContent=counter
+        })
+    </script>
+</body>
+</html>
