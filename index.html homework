@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: aquamarine;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+.about{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 20px;
+}
+.about h2{
+    color: black;
+}
+.about p{
+    max-width: 600px;
+    margin: 10px auto;
+}
+.skills{
+    background-color: crimson;
+    text-align: center;
+    padding: 0;
+}
+.skill h2{
+    color: black;
+}
+.skill-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.skill-card{
+    background-color: darkorchid;
+    border: 1px soild black;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 7px 7px 7px black;
+    margin: 5px;
+}
+#rounded{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>welocame to my web page</h1>
+    </header>
+    <section class="about">
+        <h2>About me</h2>
+        <img id="rounded" src="https://wallpapers.com/images/hd/elsa-frozen-pictures-1000-x-2000-jo8tcznpykdtqird.jpg" alt="">
+        <p>hello! my name is <B>vikruti.R</B></p>
+        <p>iam styding v a(5A) this is my web page</p>
+    </section>
+
+    </section>
+</body>
+</html>
