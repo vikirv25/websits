@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital clock</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: lightblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1{
+            font-size: 40px;
+            color: darkblue;
+            margin-bottom: 30px;
+        }
+
+        #clock{
+            font-size: 60px;
+            color: black;
+            background-color: fuchsia;
+            padding: 25px 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        letter-spacing: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>MY DIGITIAL CLOCK</h1>
+    <div id="clock">00:00:00</div>
+    <script>
+        function showTime(){
+        const clock=document.getElementById('clock')
+        const now=new Date()
+        let hours=now.getHours()
+        let seconds=now.getSeconds()
+        let minutes=now.getMinutes()
+        hours=hours  <10 ? "0"+hours:hours
+        minutes=minutes  <10 ? "0"+minutes:minutes
+        seconds=seconds  <10 ? "0"+seconds:seconds
+        const timestring=`${hours}: ${minutes}: ${seconds}:`
+        clock.textContent=timestring;
+        }
+        setInterval(showTime , 1000)
+        showTime()
+    </script>
+</body>
+</html>
